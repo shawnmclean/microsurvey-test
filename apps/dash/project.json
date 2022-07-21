@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ddash/src",
+  "sourceRoot": "apps/dash/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,13 +9,13 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/ddash",
-        "index": "apps/ddash/src/index.html",
+        "outputPath": "dist/apps/dash",
+        "index": "apps/dash/src/index.html",
         "baseHref": "/",
-        "main": "apps/ddash/src/main.tsx",
-        "polyfills": "apps/ddash/src/polyfills.ts",
-        "tsConfig": "apps/ddash/tsconfig.app.json",
-        "assets": ["apps/ddash/src/favicon.ico", "apps/ddash/src/assets"],
+        "main": "apps/dash/src/main.tsx",
+        "polyfills": "apps/dash/src/polyfills.ts",
+        "tsConfig": "apps/dash/tsconfig.app.json",
+        "assets": ["apps/dash/src/favicon.ico", "apps/dash/src/assets"],
         "styles": [],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -30,8 +30,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/ddash/src/environments/environment.ts",
-              "with": "apps/ddash/src/environments/environment.prod.ts"
+              "replace": "apps/dash/src/environments/environment.ts",
+              "with": "apps/dash/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -47,15 +47,15 @@
       "executor": "@nrwl/web:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "ddash:build",
+        "buildTarget": "dash:build",
         "hmr": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "ddash:build:development"
+          "buildTarget": "dash:build:development"
         },
         "production": {
-          "buildTarget": "ddash:build:production",
+          "buildTarget": "dash:build:production",
           "hmr": false
         }
       }
@@ -64,14 +64,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/ddash/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/dash/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ddash"],
+      "outputs": ["coverage/apps/dash"],
       "options": {
-        "jestConfig": "apps/ddash/jest.config.ts",
+        "jestConfig": "apps/dash/jest.config.ts",
         "passWithNoTests": true
       }
     }

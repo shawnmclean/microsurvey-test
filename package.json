@@ -9,8 +9,11 @@
   },
   "private": true,
   "dependencies": {
-    "@emotion/react": "11.9.3",
-    "@emotion/styled": "11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.9.1",
+    "@samelogic/microsurveys-types": "^0.5.1",
+    "@samelogic/react-microsurveys-editor": "^0.5.5",
     "core-js": "^3.6.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",

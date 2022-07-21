@@ -2,7 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "ddash": "apps/ddash",
-    "ddash-e2e": "apps/ddash-e2e"
+    "dash": "apps/dash"
   }
 }
